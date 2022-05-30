@@ -1,4 +1,4 @@
-# Awesome-books
+# Awesome books with ES6
 In this project, I will build a basic website that allows users to add/remove books from a list. I'll achieve this by using JavaScript objects, arrays, and dynamically modifying the DOM with basic events while using ES6 features.
 
 ## 🛠️ Built With
