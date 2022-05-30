@@ -1,5 +1,6 @@
 /* eslint-disable */
 import { Render } from "./modules/render.js";
+import { DateTime } from "./luxon.min.js";
 
 Render.renderBooks();
 
@@ -31,3 +32,9 @@ function showContact() {
 list.addEventListener('click',showBooks);
 addNew.addEventListener('click',showAdd);
 contact.addEventListener('click',showContact);
+
+setInterval(() => {
+  const now = DateTime.now();
+  const date = now.setLocale('en-US').toLocaleString(DateTime.DATETIME_FULL_WITH_SECONDS);
+  document.getElementById('date').innerHTML = date;
+}, 1000);

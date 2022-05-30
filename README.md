@@ -5,12 +5,14 @@ In this project, I will build a basic website that allows users to add/remove bo
 
 - HTML, CSS & Javascript
 - Linters: Lighthouse, Webhint, Stylelint & ESlint
-- Luxon
+- [Luxon]()
 
 ## 💻 Live demo
 - [Live Demo Link](https://mikemtzp.github.io/Awesome-books-es6/)
 
-## 🧮 Setup
+## 🧮 Prerequisites
+
+### Setup
 
 Follow these steps on your console to properly clone this repository on your desktop:
 
@@ -20,6 +22,10 @@ $ git clone https://github.com/mikemtzp/Awesome-books-es6.git
 $ cd my-portfolio
 $ open index.html file
 ```
+
+### Install
+
+- [Luxon library](https://moment.github.io/luxon/#/install?id=es6) download minified.
 
 ## 👤 Authors
 
