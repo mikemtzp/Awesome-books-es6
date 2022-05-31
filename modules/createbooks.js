@@ -1,6 +1,6 @@
 import Storage from './storage.js';
 
-export let bookList = Storage.initiateBooksData(); // eslint-disable-line
+export let bookList = Storage.initiateBooksData() || []; // eslint-disable-line
 
 export default class Books {
   constructor(title, author, id) {
