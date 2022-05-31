@@ -1,21 +1,6 @@
-/* eslint-disable */
-// import { Render } from "./render.js";
+import Storage from './storage.js';
 
-export class Storage {
-  static storeData() {
-    localStorage.setItem('bookList', JSON.stringify(bookList));
-  }
-
-  static initiateBooksData() {
-    const initialBooks = localStorage.getItem('bookList');
-    if (initialBooks) {
-      return JSON.parse(initialBooks);
-    }
-    return [];
-  }
-}
-
-export let bookList = Storage.initiateBooksData();
+export let bookList = Storage.initiateBooksData(); // eslint-disable-line
 
 export default class Books {
   constructor(title, author, id) {
@@ -24,7 +9,7 @@ export default class Books {
     this.id = id;
   }
 
-  static createBook({ title, author, id }) {
+  createBook() {
     const newBook = document.createElement('div');
     const titlePara = document.createElement('p');
     const authorPara = document.createElement('p');
@@ -32,10 +17,10 @@ export default class Books {
     remove.setAttribute('id', this.id);
     titlePara.textContent = this.title;
     authorPara.textContent = this.author;
-    const completeBook = `"${title}" by ${author}`;
+    const completeBook = `"${this.title}" by ${this.author}`;
     remove.textContent = 'Remove';
-    newBook.classList.toggle('grey', id % 2 !== 0);
-    newBook.classList.toggle('white', id % 2 === 0);
+    newBook.classList.toggle('grey', this.id % 2 !== 0);
+    newBook.classList.toggle('white', this.id % 2 === 0);
     newBook.classList.add('position');
     remove.classList.add('remove');
 
@@ -45,8 +30,8 @@ export default class Books {
     remove.addEventListener('click', (e) => {
       e.preventDefault();
       newBook.remove();
-      bookList = bookList.filter((book) => book.id !== id);
-      Storage.storeData();
+      bookList = bookList.filter((book) => book.id !== this.id);
+      Storage.storeData(bookList);
     });
     return newBook;
   }
@@ -69,11 +54,9 @@ add.addEventListener('click', (e) => {
   const theAuthor = newAuthor.value;
   const theId = Books.generateId();
   const myBook = new Books(theTitle, theAuthor, theId);
-  const bookElement = Books.createBook(myBook);
+  const bookElement = myBook.createBook();
   const bookListElement = document.querySelector('.box');
   bookListElement.append(bookElement);
   bookList.push(myBook);
-  Storage.storeData();
+  Storage.storeData(bookList);
 });
-
-
