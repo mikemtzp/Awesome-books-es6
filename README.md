@@ -1,73 +1,53 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# Awesome books with ES6
+In this project, I will build a basic website that allows users to add/remove books from a list. I'll achieve this by using JavaScript objects, arrays, and dynamically modifying the DOM with basic events while using ES6 features.
 
-# Project Name
+## 🛠️ Built With
 
-> Description the project.
+- HTML, CSS & Javascript
+- Linters: Lighthouse, Webhint, Stylelint & ESlint
+- [Luxon]()
 
+## 💻 Live demo
+- [Live Demo Link](https://mikemtzp.github.io/Awesome-books-es6/)
 
-## Built With
-
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
-
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
+## 🧮 Prerequisites
 
 ### Setup
 
+Follow these steps on your console to properly clone this repository on your desktop:
+
+```
+$ cd desktop
+$ git clone https://github.com/mikemtzp/Awesome-books-es6.git
+$ cd my-portfolio
+$ open index.html file
+```
+
 ### Install
 
-### Usage
+- [Luxon library](https://moment.github.io/luxon/#/install?id=es6) download minified.
 
-### Run tests
+## 👤 Authors
 
-### Deployment
+### Mike Martínez
 
-
-
-## Authors
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@mikemtzp](https://github.com/mikemtzp)
+- Twitter: [@mikemtzp](https://twitter.com/mikemtzp)
+- LinkedIn: [Miguel Martínez Prieto](https://www.linkedin.com/in/miguel-mart%C3%ADnez-prieto-a42406166/)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
+Feel free to check the [issues page](https://github.com/mikemtzp/Awesome-books-es6/issues).
 
-Feel free to check the [issues page](../../issues/).
-
-## Show your support
+## ⭐️ Show your support
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
+## 🥇 Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- This README.md was elaborated with the [Microverse readme-template](https://github.com/microverseinc/readme-template)
 
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+[MIT License](https://github.com/mikemtzp/Awesome-books-es6/blob/master/MIT.md).
