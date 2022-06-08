@@ -1,14 +1,13 @@
 # Awesome books with ES6
-In this project, I will build a basic website that allows users to add/remove books from a list. I'll achieve this by using JavaScript objects, arrays, and dynamically modifying the DOM with basic events while using ES6 features.
+> This single-page application displays a site where users can add/remove books from an interface and navigate between sections. Built with JavaScript.
 
 ## 🛠️ Built With
 
 - HTML, CSS & Javascript
 - Linters: Lighthouse, Webhint, Stylelint & ESlint
-- [Luxon]()
+- Luxon
 
-## 💻 Live demo
-- [Live Demo Link](https://mikemtzp.github.io/Awesome-books-es6/)
+## 💻 [Live demo](https://mikemtzp.github.io/Awesome-books-es6/)
 
 ## 🧮 Prerequisites
 
@@ -50,4 +49,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-[MIT License](https://github.com/mikemtzp/Awesome-books-es6/blob/master/MIT.md).
+[MIT License](https://github.com/mikemtzp/Awesome-books-es6/blob/master/MIT.md)
