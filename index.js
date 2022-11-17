@@ -11,21 +11,30 @@ const addNew = document.querySelector('.add-new');
 const contact = document.querySelector('.contact');
 
 const showBooks = () => {
-  booksSection.style.display = 'flex';
-  addSection.style.display = 'none';
-  contactSection.style.display = 'none';
+  booksSection.classList.remove('d-none');
+  list.classList.add('active');
+  addSection.classList.add('d-none');
+  addNew.classList.remove('active');
+  contactSection.classList.add('d-none');
+  contact.classList.remove('active');
 };
 
 const showAdd = () => {
-  booksSection.style.display = 'none';
-  addSection.style.display = 'flex';
-  contactSection.style.display = 'none';
+  booksSection.classList.add('d-none');
+  list.classList.remove('active');
+  addSection.classList.remove('d-none');
+  addNew.classList.add('active');
+  contactSection.classList.add('d-none');
+  contact.classList.remove('active');
 };
 
 const showContact = () => {
-  booksSection.style.display = 'none';
-  addSection.style.display = 'none';
-  contactSection.style.display = 'flex';
+  booksSection.classList.add('d-none');
+  list.classList.remove('active');
+  addSection.classList.add('d-none');
+  addNew.classList.remove('active');
+  contactSection.classList.remove('d-none');
+  contact.classList.add('active');
 };
 
 list.addEventListener('click', showBooks);
