@@ -11,7 +11,7 @@
 <body>
   
   <main>
-    <nav class="navigation navbar justify-content-between p-3 border-bottom border-4 rounded-4 shadow">
+    <nav class="navigation navbar justify-content-between position-relative p-3 border-bottom border-4 rounded-4 shadow">
       <picture class="p-3">
         <img src="/img/logo.png" alt="Awesome Books" width="145" height="65">
       </picture>
@@ -22,9 +22,8 @@
       </ul>
     </nav>
 
-    <div class="date" id="date"></div>
-
-    <section class="books" id="bookSection">
+    <section class="books position-relative" id="bookSection">
+    <div class="date position-absolute top-0 end-0 me-3 mt-3 pt-1 pb-1 ps-3 pe-3 shadow rounded-pill" id="date"></div>
       <h1 class="display-1">All Awesome books</h1>
       <div class="box"></div>
     </section>
