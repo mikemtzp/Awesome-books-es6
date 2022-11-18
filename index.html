@@ -9,21 +9,20 @@
   <title>Awesome Books ES6</title>
 </head>
 <body>
+  <nav class="navigation navbar justify-content-between position-relative p-3 border-bottom border-4 rounded-4 shadow">
+    <picture class="p-3">
+      <img src="/img/logo.png" alt="Awesome Books" width="145" height="65">
+    </picture>
+    <ul class="menu nav nav-pills nav-fill">
+      <li class="list title nav-item nav-link active me-3">List</li>
+      <li class="add-new title nav-item nav-link me-3">Add new</li>
+      <li class="contact title nav-item nav-link">Contact</li>
+    </ul>
+  </nav>
   
-  <main>
-    <nav class="navigation navbar justify-content-between position-relative p-3 border-bottom border-4 rounded-4 shadow">
-      <picture class="p-3">
-        <img src="/img/logo.png" alt="Awesome Books" width="145" height="65">
-      </picture>
-      <ul class="menu nav nav-pills nav-fill">
-        <li class="list title nav-item nav-link active me-3">List</li>
-        <li class="add-new title nav-item nav-link me-3">Add new</li>
-        <li class="contact title nav-item nav-link">Contact</li>
-      </ul>
-    </nav>
-
-    <section class="books position-relative" id="bookSection">
+  <main class="position-relative">
     <div class="date position-absolute top-0 end-0 me-3 mt-3 pt-1 pb-1 ps-3 pe-3 shadow rounded-pill" id="date"></div>
+    <section class="books position-relative" id="bookSection">
       <h1 class="display-1">All Awesome books</h1>
       <div class="box"></div>
     </section>
