@@ -29,6 +29,7 @@
     "stylelint-scss": "^3.21.0"
   },
   "dependencies": {
+    "bootstrap-icons": "^1.10.2",
     "luxon": "^2.4.0"
   }
 }

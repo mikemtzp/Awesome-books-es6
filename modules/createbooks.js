@@ -14,15 +14,17 @@ export default class Books {
     const titlePara = document.createElement('p');
     const authorPara = document.createElement('p');
     const remove = document.createElement('button');
+    const trashIcon = document.createElement('i');
     remove.setAttribute('id', this.id);
     titlePara.textContent = this.title;
     authorPara.textContent = this.author;
     const completeBook = `"${this.title}" by ${this.author}`;
     remove.textContent = 'Remove';
+    trashIcon.classList.add('bi', 'bi-trash-fill', 'ms-1');
+    remove.append(trashIcon);
     newBook.classList.toggle('grey', this.id % 2 !== 0);
     newBook.classList.toggle('white', this.id % 2 === 0);
-    newBook.classList.add('position');
-    remove.classList.add('remove');
+    remove.classList.add('btn', 'btn-danger', 'ms-2');
 
     newBook.append(completeBook);
     newBook.append(remove);
