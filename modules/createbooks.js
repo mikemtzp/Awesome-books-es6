@@ -2,7 +2,7 @@ import Storage from './storage.js';
 
 export let bookList = Storage.initiateBooksData() || []; // eslint-disable-line
 
-export default class Books {
+export default class Book {
   constructor(title, author, id) {
     this.title = title;
     this.author = author;
@@ -54,8 +54,8 @@ add.addEventListener('click', (e) => {
   const newAuthor = document.getElementById('author');
   const theTitle = newTitle.value;
   const theAuthor = newAuthor.value;
-  const theId = Books.generateId();
-  const myBook = new Books(theTitle, theAuthor, theId);
+  const theId = Book.generateId();
+  const myBook = new Book(theTitle, theAuthor, theId);
   const bookElement = myBook.createBook();
   const bookListElement = document.querySelector('.box');
   bookListElement.append(bookElement);

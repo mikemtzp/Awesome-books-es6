@@ -1,4 +1,4 @@
-import Books, { bookList } from './createbooks.js';
+import Book, { bookList } from './createbooks.js';
 
 export default class Render {
   static renderBooks() {
@@ -7,7 +7,7 @@ export default class Render {
     bookListElement.id = 'bookList';
     if (bookList) {
       bookList.forEach((book) => {
-        const bookElem = new Books(book.title, book.author, book.id);
+        const bookElem = new Book(book.title, book.author, book.id);
         const bookElement = bookElem.createBook();
         bookSection.append(bookElement);
       });
