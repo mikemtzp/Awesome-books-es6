@@ -1,57 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="index.css"> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
-    />
+    >
     <link
       rel="stylesheet"
       href="/node_modules/bootstrap-icons/font/bootstrap-icons.css"
-    />
+    >
     <title>Awesome Books ES6</title>
   </head>
-  <body>
+  <body class="vh-100 d-flex position-relative flex-column justify-content-between">
     <nav
-      class="navigation navbar justify-content-between position-relative p-3 border-bottom border-4 rounded-4 shadow"
+      class="navigation navbar justify-content-between position-relative p-2 border-bottom border-4 rounded-4 shadow"
     >
       <picture class="p-3">
-        <img src="/img/logo.png" alt="Awesome Books" width="145" height="65" />
+        <img src="/img/logo.png" alt="Awesome Books" width="145" height="65">
       </picture>
+      <div
+      class="date pt-1 pb-1 ps-3 pe-3 shadow rounded-pill"
+      id="date"
+    ></div>
       <ul class="menu nav nav-pills nav-fill">
-        <li class="list title nav-item nav-link active me-3" role="button">
-          List
+        <li>
+          <button class="list title nav-item nav-link active me-3" type="button">
+            List
+          </button>
         </li>
-        <li class="add-new title nav-item nav-link me-3" role="button">
-          Add new
+        <li>
+          <button class="add-new title nav-item nav-link me-3" type="button">
+            Add new
+          </button>
         </li>
-        <li class="contact title nav-item nav-link" role="button">Contact</li>
+        <li>
+          <button class="contact title nav-item nav-link" type="button">
+            Contact
+          </button>
+        </li>
       </ul>
     </nav>
 
-    <div
-      class="date position-absolute top-75 end-0 me-3 mt-3 pt-1 pb-1 ps-3 pe-3 shadow rounded-pill"
-      id="date"
-    ></div>
-
-    <main class="position-relative vh-auto m-5">
+    <main class="position-relative vh-auto ms-5 me-5">
       <section class="books position-relative" id="bookSection">
-        <h1 class="display-3">All Awesome books</h1>
-        <hr />
-        <div class="box overflow-auto text" style="height:345px;"></div>
+        <h1 class="display-3 m-0">All Awesome books</h1>
+        <hr>
+        <div class="box overflow-auto d-flex justify-content-center row row-cols-auto"></div>
+        <hr>
       </section>
 
       <section class="add-book d-none">
         <h2>Add a new Book</h2>
         <form id="form">
-          <input id="title" type="text" placeholder="Title" />
-          <input id="author" type="text" placeholder="Author" />
+          <input id="title" type="text" placeholder="Title">
+          <input id="author" type="text" placeholder="Author">
 
           <button id="add" type="submit">Add</button>
         </form>
@@ -61,7 +68,7 @@
         <h2>Contact Information</h2>
         <div class="contact-data">
           <p>
-            Do you have any questions or you justs want to say "Hello"?<br />You
+            Do you have any questions or you justs want to say "Hello"?<br>You
             can reach out to us!
           </p>
           <ul class="contact-list">
@@ -73,10 +80,11 @@
       </section>
     </main>
 
+
     <footer
-      class="footer p-1 border-top border-5 rounded-4 shadow-lg position-absolute bottom-0"
+      class="footer p-1 border-top border-5 rounded-top shadow-lg"
     >
-      <p class="text-center fs-6 fw-lighter lh-sm">
+      <p class="text-center fs-6 fw-lighter lh-sm m-0">
         ©Copyright Any work that is expressed in words, numbers or any other
         verbal and numerical symbols, but isn't an audiovisual work, is
         considered a literary work. That includes such things as manuscripts,

@@ -15,19 +15,19 @@ export default class Book {
     const authorPara = document.createElement('span');
     const remove = document.createElement('button');
     const trashIcon = document.createElement('i');
+    const completeBook = document.createElement('span');
     remove.setAttribute('id', this.id);
     titlePara.textContent = this.title;
     authorPara.textContent = this.author;
     authorPara.classList.add('fst-italic');
-    remove.textContent = 'Remove';
-    trashIcon.classList.add('bi', 'bi-trash-fill', 'ms-1');
+    trashIcon.classList.add('bi', 'bi-trash-fill');
+    newBook.classList.add('mb-3', 'me-3', 'ps-4', 'pe-4', 'shadow', 'rounded-pill', 'd-flex', 'align-items-center');
+    completeBook.classList.add('pt-2', 'pb-2');
     remove.append(trashIcon);
-    newBook.classList.toggle('grey', this.id % 2 !== 0);
-    newBook.classList.toggle('white', this.id % 2 === 0);
-    remove.classList.add('btn', 'btn-danger', 'ms-2');
-
-    newBook.append('"', titlePara, '"', 'by ', authorPara);
-    newBook.append(remove);
+    remove.classList.add('btn', 'btn-danger', 'ms-3', 'pt-1', 'pb-1', 'pe-2', 'ps-2');
+    completeBook.append(titlePara, ' by ', authorPara);
+    completeBook.append(remove);
+    newBook.append(completeBook);
 
     remove.addEventListener('click', (e) => {
       e.preventDefault();
