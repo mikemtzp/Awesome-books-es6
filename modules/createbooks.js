@@ -11,14 +11,14 @@ export default class Book {
 
   createBook() {
     const newBook = document.createElement('div');
-    const titlePara = document.createElement('p');
-    const authorPara = document.createElement('p');
+    const titlePara = document.createElement('span');
+    const authorPara = document.createElement('span');
     const remove = document.createElement('button');
     const trashIcon = document.createElement('i');
     remove.setAttribute('id', this.id);
     titlePara.textContent = this.title;
     authorPara.textContent = this.author;
-    const completeBook = `"${this.title}" by ${this.author}`;
+    authorPara.classList.add('fst-italic');
     remove.textContent = 'Remove';
     trashIcon.classList.add('bi', 'bi-trash-fill', 'ms-1');
     remove.append(trashIcon);
@@ -26,7 +26,7 @@ export default class Book {
     newBook.classList.toggle('white', this.id % 2 === 0);
     remove.classList.add('btn', 'btn-danger', 'ms-2');
 
-    newBook.append(completeBook);
+    newBook.append('"', titlePara, '"', 'by ', authorPara);
     newBook.append(remove);
 
     remove.addEventListener('click', (e) => {
