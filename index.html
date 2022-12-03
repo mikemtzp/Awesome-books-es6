@@ -47,21 +47,25 @@
     </nav>
 
     <main class="position-relative vh-auto ms-5 me-5">
-      <section class="books position-relative" id="bookSection">
+      <section class="d-none books position-relative" id="bookSection">
         <h1 class="display-3 m-0">All Awesome books</h1>
         <hr>
         <div class="box overflow-auto d-flex justify-content-center row row-cols-auto"></div>
         <hr>
       </section>
 
-      <section class="add-book d-none">
-        <h2>Add a new Book</h2>
-        <form id="form">
-          <input id="title" type="text" placeholder="Title">
-          <input id="author" type="text" placeholder="Author">
-
-          <button id="add" type="submit">Add</button>
-        </form>
+      <section class="add-book w-100 d-flex flex-column justify-content-center align-items-center">
+        <div class="w-50 d-flex flex-column p-3 border-4 rounded-4 shadow">
+          <h2 class="display-4 text-center">Add a new Book</h2>
+          <hr>
+          <form class="d-flex justify-content-center align-items-center" id="form">
+            <div class="w-50 mb-3">
+              <input class="form-control w-100 mb-3" id="title" type="text" placeholder="Title">
+              <input class="form-control w-100" id="author" type="text" placeholder="Author">
+            </div>
+            <button class="btn btn-primary shadow ms-4 mb-3" id="add" type="submit">Add</button>
+          </form>
+        </div>
       </section>
 
       <section class="contact-section d-none">
