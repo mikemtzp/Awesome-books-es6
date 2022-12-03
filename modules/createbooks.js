@@ -61,4 +61,6 @@ add.addEventListener('click', (e) => {
   bookListElement.append(bookElement);
   bookList.push(myBook);
   Storage.storeData(bookList);
+  newTitle.value = '';
+  newAuthor.value = '';
 });
