@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
-    >
+    />
     <link
       rel="stylesheet"
       href="/node_modules/bootstrap-icons/font/bootstrap-icons.css"
-    >
+    />
     <title>Awesome Books ES6</title>
   </head>
-  <body class="vh-100 d-flex position-relative flex-column justify-content-between">
+  <body
+    class="vh-100 d-flex position-relative flex-column justify-content-between"
+  >
     <nav
       class="navigation navbar justify-content-between position-relative p-2 border-bottom border-4 rounded-4 shadow"
     >
       <picture class="p-3">
-        <img src="/img/logo.png" alt="Awesome Books" width="145" height="65">
+        <img src="/img/logo.png" alt="Awesome Books" width="145" height="65" />
       </picture>
-      <div
-      class="date pt-1 pb-1 ps-3 pe-3 shadow rounded-pill"
-      id="date"
-    ></div>
+      <div class="date pt-1 pb-1 ps-3 pe-3 shadow rounded-pill" id="date"></div>
       <ul class="menu nav nav-pills nav-fill">
         <li>
-          <button class="list title nav-item nav-link active me-3" type="button">
+          <button
+            class="list title nav-item nav-link active me-3"
+            type="button"
+          >
             List
           </button>
         </li>
@@ -47,47 +49,70 @@
     </nav>
 
     <main class="position-relative vh-auto ms-5 me-5">
-      <section class="d-none books position-relative" id="bookSection">
+      <section class="books position-relative" id="bookSection">
         <h1 class="display-3 m-0">All Awesome books</h1>
-        <hr>
-        <div class="box overflow-auto d-flex justify-content-center row row-cols-auto"></div>
-        <hr>
+        <hr />
+        <div
+          class="box overflow-auto d-flex justify-content-center row row-cols-auto"
+        ></div>
+        <hr />
       </section>
 
-      <section class="add-book w-100 d-flex flex-column justify-content-center align-items-center">
+      <section
+        class="add-book d-none w-100 d-flex flex-column justify-content-center align-items-center"
+      >
         <div class="w-50 d-flex flex-column p-3 border-4 rounded-4 shadow">
           <h2 class="display-4 text-center">Add a new Book</h2>
-          <hr>
-          <form class="d-flex justify-content-center align-items-center" id="form">
+          <hr />
+          <form
+            class="d-flex justify-content-center align-items-center"
+            id="form"
+          >
             <div class="w-50 mb-3">
-              <input class="form-control w-100 mb-3" id="title" type="text" placeholder="Title">
-              <input class="form-control w-100" id="author" type="text" placeholder="Author">
+              <input
+                class="form-control w-100 mb-3"
+                id="title"
+                type="text"
+                placeholder="Title"
+              />
+              <input
+                class="form-control w-100"
+                id="author"
+                type="text"
+                placeholder="Author"
+              />
             </div>
-            <button class="btn btn-primary shadow ms-4 mb-3" id="add" type="submit">Add</button>
+            <button
+              class="btn btn-primary shadow ms-4 mb-3"
+              id="add"
+              type="submit"
+            >
+              Add
+            </button>
           </form>
         </div>
       </section>
 
-      <section class="contact-section d-none">
-        <h2>Contact Information</h2>
-        <div class="contact-data">
-          <p>
-            Do you have any questions or you justs want to say "Hello"?<br>You
-            can reach out to us!
-          </p>
-          <ul class="contact-list">
-            <li>Our e-mail: awesomebooks@gmail.com</li>
-            <li>Our phone number: 004352781</li>
-            <li>Our address C.K Kentucky 23, 87465 Sydney, Australia</li>
-          </ul>
+      <section class="contact-section d-none w-100 d-flex flex-column justify-content-center align-items-center">
+        <div class="w-50 d-flex flex-column p-3 border-4 rounded-4 shadow text-center">
+          <h2 class="display-4">Contact Information</h2>
+          <hr>
+          <div class="contact-data">
+            <p class="fs-6">
+              Do you have any questions or you just want to say "Hello"?<br />You
+              can reach out to us!
+            </p>
+            <ul class="contact-list text-start">
+              <li>Our e-mail: <strong>awesomebooks@gmail.com</strong></li>
+              <li>Our phone number: <strong>+004352781</strong></li>
+              <li>Our address: <strong>C.K Kentucky 23, 87465 Sydney, Australia</strong></li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>
 
-
-    <footer
-      class="footer p-1 border-top border-5 rounded-top shadow-lg"
-    >
+    <footer class="footer p-1 border-top border-5 rounded-top shadow-lg">
       <p class="text-center fs-6 fw-lighter lh-sm m-0">
         ©Copyright Any work that is expressed in words, numbers or any other
         verbal and numerical symbols, but isn't an audiovisual work, is
