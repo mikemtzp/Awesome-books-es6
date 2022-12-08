@@ -7,7 +7,7 @@
 - Linters: Lighthouse, Webhint, Stylelint & ESlint
 - Luxon
 
-## 💻 [Live demo](https://mikemtzp.github.io/Awesome-books-es6/)
+## 💻 [Demo](https://awesomebookslibrary.netlify.app/)
 
 ## 🧮 Prerequisites
 
